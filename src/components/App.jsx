@@ -21,13 +21,13 @@ export function App() {
     const btnType = e.target.value;
 
     if (btnType === RESPONSES.good) {
-      setGoodOption(goodOption + 1);
+      setGoodOption(option => option + 1);
     }
     if (btnType === RESPONSES.neutral) {
-      setNeutralOption(neutralOption + 1);
+      setNeutralOption(option => option + 1);
     }
     if (btnType === RESPONSES.bad) {
-      setBadOption(badOption + 1);
+      setBadOption(option => option + 1);
     }
   };
 
